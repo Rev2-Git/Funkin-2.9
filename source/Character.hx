@@ -480,7 +480,7 @@ class Character extends FlxSprite
 			case 'darnell':
 				tex = Paths.getSparrowAtlas('characters/darnell');
 				frames = tex;
-				quickAnimAdd('idle', 'Darnell idle');
+				animation.addByPrefix('idle', 'Darnell idle', 15, true);
 				quickAnimAdd('singUP', 'Darnell up');
 				quickAnimAdd('singRIGHT', 'Darnell right');
 				quickAnimAdd('singDOWN', 'Darnell down');
